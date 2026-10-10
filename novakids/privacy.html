@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NovaKids – Gizlilik Politikası / Privacy Policy</title>
+<style>
+  :root { --bg:#f4f6f8; --card:#ffffff; --text:#15191e; --muted:#5a6472; --accent:#0B7A75; --line:#e3e7ec; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0e1013; --card:#181b20; --text:#f2f4f7; --muted:#a3acb9; --accent:#3cc1b7; --line:#2a2f37; } }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:28px; margin:0 0 4px; }
+  h2 { font-size:20px; margin:28px 0 8px; color:var(--accent); }
+  .muted { color:var(--muted); font-size:14px; }
+  section { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:8px 22px 20px; margin-top:24px; }
+  a { color:var(--accent); }
+  nav a { margin-right:16px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>NovaKids</h1>
+  <p class="muted">Gizlilik Politikası / Privacy Policy · Son güncelleme / Last updated: 10 October 2026</p>
+  <nav><a href="#tr">Türkçe</a><a href="#en">English</a><a href="./">Ana sayfa / Home</a></nav>
+
+  <section id="tr">
+    <h2>Gizlilik Politikası</h2>
+    <p>NovaKids ("uygulama"), Ozgur Gökçe tarafından geliştirilen bir aile güvenliği ve ebeveyn kontrol uygulamasıdır. Uygulama iki modda çalışır: <b>ebeveyn</b> ve <b>çocuk cihazı</b>. Çocuk cihazı, yalnızca ebeveynin oluşturduğu eşleştirme koduyla ve cihazda kalıcı, görünür bir bildirim gösterilerek bağlanır.</p>
+
+    <h2>İşlenen bilgiler</h2>
+    <ul>
+      <li><b>Ebeveyn hesabı:</b> e-posta adresi (e-posta/şifre ya da Google ile giriş). Şifreler bizim tarafımızda saklanmaz; kimlik doğrulama Supabase Auth ile yapılır.</li>
+      <li><b>Çocuk cihazından (ebeveyn izniyle):</b> konum (arka planda dahil), uygulama kullanım süreleri ve uygulama simgeleri, pil seviyesi, cihaz modeli, SOS çağrıları ve "telefonu çaldır" / hızlı mesaj cevapları.</li>
+      <li><b>Ebeveynin girdiği bilgiler:</b> çocuğun adı, isteğe bağlı telefon numarası, güvenli/yasak bölgeler, süre limitleri ve zaman planları.</li>
+      <li><b>Bildirim anahtarı:</b> ebeveyn telefonuna anlık bildirim gönderebilmek için Firebase Cloud Messaging cihaz anahtarı.</li>
+    </ul>
+
+    <h2>Bilgilerin kullanımı</h2>
+    <p>Bilgiler yalnızca uygulamanın işlevleri için kullanılır: çocuğun konumunu ve geçmişini ebeveyne göstermek, bölge ve limit uyarıları göndermek, raporlar oluşturmak, SOS ve mesajları iletmek. Bilgiler satılmaz, reklam için kullanılmaz ve üçüncü kişilerle paylaşılmaz. Uygulamada reklam yoktur.</p>
+
+    <h2>Hizmet sağlayıcılar</h2>
+    <ul>
+      <li><b>Supabase</b> – veritabanı ve kimlik doğrulama (veriler şifreli bağlantıyla iletilir).</li>
+      <li><b>Google Firebase Cloud Messaging</b> – ebeveyn telefonuna bildirim iletimi.</li>
+      <li><b>Google Maps / Places</b> – harita gösterimi ve yer araması.</li>
+    </ul>
+
+    <h2>Kimler görebilir?</h2>
+    <p>Çocuğa ait veriler yalnızca o ailenin ebeveynlerine (aile sahibi ve davet koduyla katılan ebeveynler) görünür. Erişim, veritabanı düzeyinde satır güvenliği (RLS) ile korunur.</p>
+
+    <h2>Saklama ve silme</h2>
+    <p>Veriler, ebeveyn hesabı açık kaldığı sürece saklanır. Hesabınızın ve tüm aile verilerinizin silinmesini istemek için <a href="mailto:ozgurgokce15@gmail.com?subject=NovaKids%20veri%20silme">ozgurgokce15@gmail.com</a> adresine yazın; talepler 30 gün içinde yerine getirilir. Çocuk cihazında eşleştirmenin kaldırılması o cihazdan veri gönderimini durdurur.</p>
+
+    <h2>Çocukların gizliliği</h2>
+    <p>Uygulama ebeveynler tarafından, kendi velayetlerindeki çocukların güvenliği için kullanılmak üzere tasarlanmıştır. Çocuk cihazı modu, ebeveynin açık onayı ve çocuğun cihazında görünür bir bildirimle çalışır.</p>
+
+    <h2>İletişim</h2>
+    <p><a href="mailto:ozgurgokce15@gmail.com">ozgurgokce15@gmail.com</a></p>
+  </section>
+
+  <section id="en">
+    <h2>Privacy Policy</h2>
+    <p>NovaKids ("the app") is a family safety and parental control app developed by Ozgur Gökçe. It runs in two modes: <b>parent</b> and <b>child device</b>. A child device can only be linked with a pairing code created by the parent, and it always shows a persistent, visible notification.</p>
+
+    <h2>Information we process</h2>
+    <ul>
+      <li><b>Parent account:</b> email address (email/password or Sign in with Google). Authentication is handled by Supabase Auth; we do not store passwords ourselves.</li>
+      <li><b>From the child device (with parental consent):</b> location (including in the background), app usage times and app icons, battery level, device model, SOS alerts and replies to "ring" / quick messages.</li>
+      <li><b>Entered by the parent:</b> child's name, optional phone number, safe/restricted zones, time limits and schedules.</li>
+      <li><b>Notification token:</b> a Firebase Cloud Messaging device token used to deliver push notifications to the parent's phone.</li>
+    </ul>
+
+    <h2>How we use it</h2>
+    <p>Information is used only to provide the app's features: showing the child's location and history to the parent, sending zone and limit alerts, generating reports, and delivering SOS alerts and messages. It is never sold, never used for advertising and never shared with third parties. The app contains no ads.</p>
+
+    <h2>Service providers</h2>
+    <ul>
+      <li><b>Supabase</b> – database and authentication (data is transmitted over encrypted connections).</li>
+      <li><b>Google Firebase Cloud Messaging</b> – push notification delivery.</li>
+      <li><b>Google Maps / Places</b> – map display and place search.</li>
+    </ul>
+
+    <h2>Who can see the data</h2>
+    <p>A child's data is visible only to that family's parents (the family owner and parents who joined with an invite code). Access is enforced with database row-level security.</p>
+
+    <h2>Retention and deletion</h2>
+    <p>Data is kept while the parent account exists. To request deletion of your account and all family data, email <a href="mailto:ozgurgokce15@gmail.com?subject=NovaKids%20data%20deletion">ozgurgokce15@gmail.com</a>; requests are completed within 30 days. Unpairing a child device stops data being sent from that device.</p>
+
+    <h2>Children's privacy</h2>
+    <p>The app is designed to be used by parents for the safety of children in their care. Child-device mode runs only with the parent's explicit consent and with a visible notification on the child's device.</p>
+
+    <h2>Contact</h2>
+    <p><a href="mailto:ozgurgokce15@gmail.com">ozgurgokce15@gmail.com</a></p>
+  </section>
+  <p class="muted" style="text-align:center;margin-top:24px">Created by Ozgur Gökçe</p>
+</main>
+</body>
+</html>
