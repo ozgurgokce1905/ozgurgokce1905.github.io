@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NovaKids – Hesap Silme / Delete Account</title>
+<style>
+  :root { --bg:#f4f6f8; --card:#ffffff; --text:#15191e; --muted:#5a6472; --accent:#0B7A75; --line:#e3e7ec; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0e1013; --card:#181b20; --text:#f2f4f7; --muted:#a3acb9; --accent:#3cc1b7; --line:#2a2f37; } }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:28px; margin:0 0 4px; }
+  h2 { font-size:20px; margin:28px 0 8px; color:var(--accent); }
+  .muted { color:var(--muted); font-size:14px; }
+  section { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:8px 22px 20px; margin-top:24px; }
+  a { color:var(--accent); }
+  nav a { margin-right:16px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>NovaKids: Parental Control</h1>
+  <p class="muted">Hesap ve veri silme / Account and data deletion · Geliştirici / Developer: Ozgur Gökçe</p>
+  <nav><a href="#tr">Türkçe</a><a href="#en">English</a><a href="privacy.html">Gizlilik / Privacy</a></nav>
+
+  <section id="tr">
+    <h2>Hesabınızı silme</h2>
+    <p><b>Uygulamadan:</b> NovaKids'i açın → ebeveyn ekranında <b>Ayarlar</b> → <b>Hesabı sil</b> → onaylayın. Hesabınız ve ailenize ait tüm veriler hemen silinir.</p>
+    <p><b>E-posta ile:</b> Uygulamaya erişiminiz yoksa, hesabınızın e-posta adresinden <a href="mailto:ozgurgokce15@gmail.com?subject=NovaKids%20hesap%20silme">ozgurgokce15@gmail.com</a> adresine "NovaKids hesap silme" konulu bir e-posta gönderin. Talep 30 gün içinde yerine getirilir ve size bilgi verilir.</p>
+
+    <h2>Silinen veriler</h2>
+    <ul>
+      <li>Ebeveyn hesabı (e-posta adresi, giriş bilgileri)</li>
+      <li>Aile sahibiyseniz: aile, çocuk profilleri, eşleşmiş çocuk cihazları, konum ve konum geçmişi, uygulama kullanım verileri, limitler, kurallar, bölgeler, SOS ve mesaj kayıtları, raporlar</li>
+      <li>Bildirim anahtarları (Firebase Cloud Messaging)</li>
+    </ul>
+    <p>Aileye davetle katılmış ikinci bir ebeveynseniz yalnızca sizin hesabınız silinir; aile sahibinin verileri kalır.</p>
+
+    <h2>Saklanan veriler</h2>
+    <p>Silme işleminden sonra hiçbir kişisel veri saklanmaz. Sunucu yedeklerinde kalan kopyalar en geç 30 gün içinde kendiliğinden silinir.</p>
+
+    <h2>Hesabı silmeden veri silme</h2>
+    <p>Bir çocuğu uygulamada <b>Çocuklar</b> sekmesinden kaldırarak o çocuğa ait tüm verileri silebilirsiniz. Çocuk cihazında eşleştirmeyi kaldırmak o cihazdan veri gönderimini durdurur.</p>
+  </section>
+
+  <section id="en">
+    <h2>Deleting your account</h2>
+    <p><b>In the app:</b> open NovaKids → on the parent screen go to <b>Settings</b> → <b>Delete account</b> → confirm. Your account and all of your family's data are deleted immediately.</p>
+    <p><b>By email:</b> if you can't access the app, send an email from your account's email address to <a href="mailto:ozgurgokce15@gmail.com?subject=NovaKids%20account%20deletion">ozgurgokce15@gmail.com</a> with the subject "NovaKids account deletion". The request is completed within 30 days and you will be notified.</p>
+
+    <h2>Data that is deleted</h2>
+    <ul>
+      <li>Parent account (email address, sign-in details)</li>
+      <li>If you own the family: the family, child profiles, paired child devices, location and location history, app usage data, limits, rules, zones, SOS and message records, reports</li>
+      <li>Push notification tokens (Firebase Cloud Messaging)</li>
+    </ul>
+    <p>If you joined a family by invitation as a second parent, only your own account is deleted; the family owner's data remains.</p>
+
+    <h2>Data that is kept</h2>
+    <p>No personal data is kept after deletion. Copies remaining in server backups are removed automatically within 30 days.</p>
+
+    <h2>Deleting data without deleting your account</h2>
+    <p>Remove a child from the <b>Children</b> tab to delete all data for that child. Unpairing on the child's device stops it from sending data.</p>
+  </section>
+
+  <p class="muted" style="text-align:center;margin-top:32px">Created by Ozgur Gökçe</p>
+</main>
+</body>
+</html>
