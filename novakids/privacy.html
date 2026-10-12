@@ -30,8 +30,8 @@
     <h2>İşlenen bilgiler</h2>
     <ul>
       <li><b>Ebeveyn hesabı:</b> e-posta adresi (e-posta/şifre ya da Google ile giriş). Şifreler bizim tarafımızda saklanmaz; kimlik doğrulama Supabase Auth ile yapılır.</li>
-      <li><b>Çocuk cihazından (ebeveyn izniyle):</b> konum (arka planda dahil), uygulama kullanım süreleri ve uygulama simgeleri, pil seviyesi, cihaz modeli, SOS çağrıları ve "telefonu çaldır" / hızlı mesaj cevapları.</li>
-      <li><b>Ebeveynin girdiği bilgiler:</b> çocuğun adı, isteğe bağlı telefon numarası, güvenli/yasak bölgeler, süre limitleri ve zaman planları.</li>
+      <li><b>Çocuk cihazından (ebeveyn izniyle):</b> konum (arka planda dahil) ve rota geçmişi, adım sayısı ("Fiziksel aktivite" izni verilirse), uygulama kullanım süreleri ve uygulama simgeleri, pil seviyesi, cihaz modeli, SOS çağrıları ve "telefonu çaldır" / hızlı mesaj cevapları.</li>
+      <li><b>Ebeveynin girdiği bilgiler:</b> çocuğun adı, isteğe bağlı telefon numarası ve fotoğrafı (sadece aile görür), güvenli/yasak bölgeler, süre limitleri ve zaman planları.</li>
       <li><b>Bildirim anahtarı:</b> ebeveyn telefonuna anlık bildirim gönderebilmek için Firebase Cloud Messaging cihaz anahtarı.</li>
     </ul>
 
@@ -49,7 +49,7 @@
     <p>Çocuğa ait veriler yalnızca o ailenin ebeveynlerine (aile sahibi ve davet koduyla katılan ebeveynler) görünür. Erişim, veritabanı düzeyinde satır güvenliği (RLS) ile korunur.</p>
 
     <h2>Saklama ve silme</h2>
-    <p>Veriler, ebeveyn hesabı açık kaldığı sürece saklanır. Hesabınızın ve tüm aile verilerinizin silinmesini istemek için <a href="mailto:ozgurgokce15@gmail.com?subject=NovaKids%20veri%20silme">ozgurgokce15@gmail.com</a> adresine yazın; talepler 30 gün içinde yerine getirilir. Çocuk cihazında eşleştirmenin kaldırılması o cihazdan veri gönderimini durdurur.</p>
+    <p>Konum ve rota geçmişi 7 gün saklanır, daha eskisi otomatik silinir. Diğer veriler ebeveyn hesabı açık kaldığı sürece saklanır. Hesabınızın ve tüm aile verilerinizin silinmesini istemek için <a href="mailto:ozgurgokce15@gmail.com?subject=NovaKids%20veri%20silme">ozgurgokce15@gmail.com</a> adresine yazın; talepler 30 gün içinde yerine getirilir. Çocuk cihazında eşleştirmenin kaldırılması o cihazdan veri gönderimini durdurur.</p>
 
     <h2>Çocukların gizliliği</h2>
     <p>Uygulama ebeveynler tarafından, kendi velayetlerindeki çocukların güvenliği için kullanılmak üzere tasarlanmıştır. Çocuk cihazı modu, ebeveynin açık onayı ve çocuğun cihazında görünür bir bildirimle çalışır.</p>
@@ -65,8 +65,8 @@
     <h2>Information we process</h2>
     <ul>
       <li><b>Parent account:</b> email address (email/password or Sign in with Google). Authentication is handled by Supabase Auth; we do not store passwords ourselves.</li>
-      <li><b>From the child device (with parental consent):</b> location (including in the background), app usage times and app icons, battery level, device model, SOS alerts and replies to "ring" / quick messages.</li>
-      <li><b>Entered by the parent:</b> child's name, optional phone number, safe/restricted zones, time limits and schedules.</li>
+      <li><b>From the child device (with parental consent):</b> location (including in the background) and route history, step count (if "Physical activity" permission is granted), app usage times and app icons, battery level, device model, SOS alerts and replies to "ring" / quick messages.</li>
+      <li><b>Entered by the parent:</b> child's name, optional phone number and photo (visible only to the family), safe/restricted zones, time limits and schedules.</li>
       <li><b>Notification token:</b> a Firebase Cloud Messaging device token used to deliver push notifications to the parent's phone.</li>
     </ul>
 
@@ -84,7 +84,7 @@
     <p>A child's data is visible only to that family's parents (the family owner and parents who joined with an invite code). Access is enforced with database row-level security.</p>
 
     <h2>Retention and deletion</h2>
-    <p>Data is kept while the parent account exists. To request deletion of your account and all family data, email <a href="mailto:ozgurgokce15@gmail.com?subject=NovaKids%20data%20deletion">ozgurgokce15@gmail.com</a>; requests are completed within 30 days. Unpairing a child device stops data being sent from that device.</p>
+    <p>Location and route history are kept for 7 days and older entries are deleted automatically. Other data is kept while the parent account exists. To request deletion of your account and all family data, email <a href="mailto:ozgurgokce15@gmail.com?subject=NovaKids%20data%20deletion">ozgurgokce15@gmail.com</a>; requests are completed within 30 days. Unpairing a child device stops data being sent from that device.</p>
 
     <h2>Children's privacy</h2>
     <p>The app is designed to be used by parents for the safety of children in their care. Child-device mode runs only with the parent's explicit consent and with a visible notification on the child's device.</p>
